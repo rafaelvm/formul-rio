@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastramento</h1>
+        <h4>Preencha todos os campos</h4>
+    </header>
+
+    <main>
+        <form action="" method="post"></form>
+        <fieldset>
+            <div class="conteudo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required placeholder="Nome">
+            </div>
+
+            <div class="conteudo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome">
+            </div>
+            
+            <fieldset>
+            <div class="conteudo">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required placeholder="frontend@html.css">
+            </div>
+
+            <div class="conteudo">
+                <label for="tel"><strong>Telefone:</strong></label>
+                <input type="number" name="tel" id="tel" required placeholder="(11) 90123-4567">
+            </div>
+        </fieldset>
+    
+            <div class="conteudo">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <input type="radio" name="sex" value="Masculino" required> Masculino
+                <input type="radio" name="sex" value="Feminino" required checked> Feminino
+                <input type="radio" name="sex" value="Prefiro não declarar" required> Prefiro não declarar
+            </div>
+        </fieldset>
+
+            <fieldset>
+                <div class="conteudo">
+                    <label><strong>Campo de desenvolvimento:</strong></label>
+                    <input type="radio" name="camp" value="frontend" checked> Front-End
+                    <label>
+                    <input type="radio" name="camp" value="backend"> Back-End
+                    </label>
+                    <label>
+                    <input type="radio" name="camp" value="fullstack"> FullStack
+                    </label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="conteudo">
+                    <label for="tecnologia"><strong>Tecnologias utilizadas:</strong></label>
+                    <input type="checkbox" name="html" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" name="css" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" name="java" value="JavaScript">
+                    <label for="tecnologia3">JavaScript</label>
+                    <input type="checkbox" name=".net" value=".NET">
+                    <label for="tecnologia4">.NET</label>
+                    <input type="checkbox" name="php" value="PHP">
+                    <label for="tecnologia5">PHP</label>
+                    <input type="checkbox" name="python" value="Python">
+                    <label for="tecnologia6">Python</label>
+                    <input type="checkbox" name="laravel" value="Laravel">
+                    <label for="tecnologia7">Laravel</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="conteudo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                    <select id="senioridade" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="junior">Júnior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="senuir">Senior</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="conteudo1"><br>
+                <label for="obs"><strong>Conte um pouco mais sobre você</strong></label> <br>
+                <textarea name="obs" id="obs" cols="40" rows="10" placeholder="Escreva um poucou mais..."></textarea>
+            </div>
+
+            <button type="submit">Concluído</button>
+
+            <span><strong>Ainda não tem conta?</strong></span>
+
+            <div id="nada">
+            <a href="login.html">Login</a>
+            </div>
+        </main>
+    </body>
+</html>

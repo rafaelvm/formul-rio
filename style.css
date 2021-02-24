@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(90, 46, 90), rgb(134, 101, 101));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* Login */
+
+.card {
+    position: relative;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 350px;
+    padding: 100px 60px 30px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 1px 1px 50px 5px rgba(0, 0,0, 0.3);
+    opacity: 0.72;
+    
+}
+
+.campo {
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 20%;
+    position: relative;
+    bottom: 28%;
+    left: 17%;
+    
+}
+
+.campo label {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo input {
+    padding: 0.5em;
+    font-size: 15px;
+    margin: 2px;
+    background: whitesmoke;
+}
+
+.campo input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 25px;
+    padding: 10px;
+
+}
+
+.campo input[type="submit"] {
+    border: 1px solid rgb(90, 46, 90);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    background: rgb(134, 101, 101);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+    width: 200px;
+}
+
+.campo input[type="submit"]:hover {
+    background: transparent;
+    text-shadow: none;
+    transition: 0.2s;
+}
+
+p {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+    font-weight: bolder;
+}
+
+div a {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5%;
+    right: 13%;
+    padding: 3px;
+    color: rgb(90, 46, 90);
+    height: 20px;
+    font-weight: bolder;
+    
+}
+
+div a:visited {
+    color: rgb(134, 101, 101);;
+    transition: 0.2;
+}
+
+    /* Cadastro */
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+ 
+h4 {
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    padding: 2em;
+}
+ 
+fieldset {
+    border: none;
+
+}
+
+.conteudo {
+    padding: 0.8em;
+    display: inline-block;
+    position: relative;
+    left: 12%;
+    margin: 0.7em;
+    
+}
+
+.conteudo label {
+    font-size: 20px;
+}
+
+.conteudo input {
+    border: 1px solid rgb(90, 46, 90);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder {
+    color:rgb(134, 101, 101);
+    font-size: 12px;
+ }
+
+
+.conteudo1 label {
+    font-size: 20px;
+    position: absolute;
+    left: 36%;
+    bottom: 25%;
+    
+}
+
+.conteudo1 textarea {
+    border: 1px solid rgb(134, 101, 101);
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    position: absolute;
+    left: 36%;
+    
+}
+
+.conteudo1 textarea::placeholder {
+    padding: 20px;
+}
+
+button {
+    border: 1px solid rgb(90, 46, 90);
+    border-radius: 20px;
+    position: absolute;
+    left: 65%;
+    bottom: 10%;
+    background: rgb(134, 101, 101);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+    width: 200px;
+    padding: 1em;
+    
+}
+
+button:hover {
+    background: whitesmoke;
+    text-shadow: none;
+    transition: 0.2s;
+
+}
+
+span {
+    position: absolute;
+    right: 12%;
+    top: 6%;
+
+}
+
+#nada {
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    cursor: pointer; 
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(90, 46, 90);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+}
+
+#nada:visited {
+    color: rgb(134, 101, 101);
+    transition: 0.2;
+}
