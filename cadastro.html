@@ -8,101 +8,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="card2">
+
     <header>
-        <h1>Cadastramento</h1>
-        <h4>Preencha todos os campos</h4>
+    <h1>Cadastramento</h1>
+    <h2>Preencha todos os campos</h2>
     </header>
-
-    <main>
-        <form action="" method="post"></form>
-        <fieldset>
+    
+    <form action="" method="post"></form>
             <div class="conteudo">
-                <label for="nome"><strong>Nome:</strong></label>
-                <input type="text" name="nome" id="nome" required placeholder="Nome">
-            </div>
-
-            <div class="conteudo">
-                <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome">
-            </div>
-            
             <fieldset>
             <div class="conteudo">
-                <label for="email"><strong>Email:</strong></label>
-                <input type="email" name="email" id="email" required placeholder="frontend@html.css">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
             </div>
 
             <div class="conteudo">
-                <label for="tel"><strong>Telefone:</strong></label>
-                <input type="number" name="tel" id="tel" required placeholder="(11) 90123-4567">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome" required>
             </div>
-        </fieldset>
-    
+            </fieldset>
+
+            <fieldset>
+            <div class="conteudo">
+                <label for="nome"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+            </div>
+
+            <div class="conteudo">
+                <label for="tel"><strong>Telefone</strong></label>
+                <input type="number" name="tel" id="tel" placeholder="(11) 91234-5678" required>
+            </div>
+            </fieldset>
+        
+            <fieldset>
             <div class="conteudo">
                 <label for="sexo"><strong>Sexo:</strong></label>
                 <input type="radio" name="sex" value="Masculino" required> Masculino
                 <input type="radio" name="sex" value="Feminino" required checked> Feminino
-                <input type="radio" name="sex" value="Prefiro não declarar" required> Prefiro não declarar
             </div>
-        </fieldset>
-
-            <fieldset>
-                <div class="conteudo">
-                    <label><strong>Campo de desenvolvimento:</strong></label>
-                    <input type="radio" name="camp" value="frontend" checked> Front-End
-                    <label>
-                    <input type="radio" name="camp" value="backend"> Back-End
-                    </label>
-                    <label>
-                    <input type="radio" name="camp" value="fullstack"> FullStack
-                    </label>
-            </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="conteudo">
-                    <label for="tecnologia"><strong>Tecnologias utilizadas:</strong></label>
-                    <input type="checkbox" name="html" value="HTML">
-                    <label for="tecnologia1">HTML</label>
-                    <input type="checkbox" name="css" value="CSS">
-                    <label for="tecnologia2">CSS</label>
-                    <input type="checkbox" name="java" value="JavaScript">
-                    <label for="tecnologia3">JavaScript</label>
-                    <input type="checkbox" name=".net" value=".NET">
-                    <label for="tecnologia4">.NET</label>
-                    <input type="checkbox" name="php" value="PHP">
-                    <label for="tecnologia5">PHP</label>
-                    <input type="checkbox" name="python" value="Python">
-                    <label for="tecnologia6">Python</label>
-                    <input type="checkbox" name="laravel" value="Laravel">
-                    <label for="tecnologia7">Laravel</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="conteudo">
-                <label for="senioridade"><strong>Senioridade</strong></label>
-                    <select id="senioridade" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option value="junior">Júnior</option>
-                        <option value="Pleno">Pleno</option>
-                        <option value="senuir">Senior</option>
+                
+            <div class="conteudo">
+                <label for="nacionalidade"><strong>Nacionalidade</strong></label>
+                <select required>
+                    <option selected disable value="">Selecione</option>
+                    <option value="eua">Americana</option>
+                    <option value="br">Brasileira</option>
+                    <option value="esp">Espanhola</option>
+                    <option value="ing">Inglesa</option>
                     </select>
-                </div>
+            </div>
             </fieldset>
 
-            <div class="conteudo1"><br>
-                <label for="obs"><strong>Conte um pouco mais sobre você</strong></label> <br>
-                <textarea name="obs" id="obs" cols="40" rows="10" placeholder="Escreva um poucou mais..."></textarea>
+            <fieldset>
+                <div class="conteudo">
+                    <label for="camp">Campo de Desenvolvimento</label>
+                    <input type="radio" name="camp" value="frontend" checked> Front-End
+                    <input type="radio" name="camp" value="backend"> Back-End
+                    <input type="radio" name="camp" value="fullstack"> Fullstack
+                </div>
+            </fieldset>
+            
+            <div class="conteudo1">
+                <label for="obs">Discorra sobre suas tecnologias utilizadas</label>
+                <textarea name="obs" id="obs" cols="30" rows="5" placeholder="HTML, CSS, JavaScrip, Laravel, PHP, C#,..."></textarea>
+            </div>
+            
+            <div class="conteudo1">
+                <input type="submit" value="Concluído">
             </div>
 
-            <button type="submit">Concluído</button>
-
-            <span><strong>Ainda não tem conta?</strong></span>
-
-            <div id="nada">
-            <a href="login.html">Login</a>
+            <div id="foot">
+                <span>Já tem conta?</span>
+                <a href="login.html">Login</a>
             </div>
-        </main>
+            
+      
+        </div>
+        </form>
     </body>
 </html>
