@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
         /* Login */
 
@@ -42,7 +42,6 @@ body {
 }
 
 .campo label {
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,70 +109,82 @@ div a:visited {
 
     /* Cadastro */
 
-h1 {
-    text-align: center;
-    font-size: 45px;
+#card2 {
+    position: relative;
+    left: 1%;
+    top: 4%;
+    background-color: whitesmoke;
+    width: 800px;
+    height: 500px;
+    padding: 100px 60px 30px;
+    border-radius: 20px;
     display: flex;
-    position: absolute;
-    top: 5%;
-    left: 35%;
+    box-shadow: 1px 1px 50px 5px rgba(0, 0,0, 0.3);
+    opacity: 0.65;
+
 }
- 
-h4 {
+
+header {
+    position: relative;
+    bottom: 47%;
+    left: 30%;
+}
+
+h2 {font-size: 13px;
     text-align: center;
-    font-size: 17px;
-    display: flex;
-    position: absolute;
-    top: 10%;
-    left: 37%;
-    padding: 2em;
+    padding: 0.6em;
 }
- 
-fieldset {
-    border: none;
+
+fieldset{
+    border: 0;
+    padding-bottom: 6%;
 
 }
 
 .conteudo {
-    padding: 0.8em;
-    display: inline-block;
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 5%;
     position: relative;
-    left: 12%;
-    margin: 0.7em;
-    
+    bottom: 18%;
+    right: 15%;
+    display: inline-block;
 }
 
 .conteudo label {
-    font-size: 20px;
-}
+    font-size: 16px;
+    display: block;
+    margin: 0.1em;
 
-.conteudo input {
-    border: 1px solid rgb(90, 46, 90);
-    border-radius: 20px;
-    padding: 10px;
-}
-
-::-webkit-input-placeholder {
-    color:rgb(134, 101, 101);
-    font-size: 12px;
- }
-
-
-.conteudo1 label {
-    font-size: 20px;
-    position: absolute;
-    left: 36%;
-    bottom: 25%;
     
 }
 
+.conteudo input[type="text"], input[type="number"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 25px;
+    padding: 10px;
+    background: whitesmoke;
+
+}
+
+.conteudo1 label {
+    font-size: 14px;
+    position: absolute;
+    bottom: 8%;
+    margin: 0.2em;
+
+    
+}
 .conteudo1 textarea {
-    border: 1px solid rgb(134, 101, 101);
-    border-radius: 10px;
-    padding: 4px;
+    padding: 5px;
     display: flex;
     position: absolute;
-    left: 36%;
+    left: 10%;
+    top: 95%;
+    border: 1px solid rgb(134, 101, 101);
+    border-radius: 20px;
+    outline: none;
     
 }
 
@@ -181,48 +192,61 @@ fieldset {
     padding: 20px;
 }
 
-button {
+.conteudo input::placeholder {
+    padding: 12px;
+}
+
+
+::-webkit-input-placeholder {
+    color:rgb(134, 101, 101);
+    font-size: 12px;
+ }
+
+
+input:active, input:focus {
+    outline: none;
+}
+
+.conteudo1 input[type="submit"] {
     border: 1px solid rgb(90, 46, 90);
     border-radius: 20px;
     position: absolute;
-    left: 65%;
-    bottom: 10%;
+    left: 21%;
+    top: 123%;
     background: rgb(134, 101, 101);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
     cursor: pointer;
     width: 200px;
-    padding: 1em;
+}
+
+.conteudo1 input[type="submit"]:hover {
+    background: transparent;
+    text-shadow: none;
+    transition: 0.2s;
+}
+
+
+span {
+    font-size: 15px;
+    position: absolute;
+    top: 133%;
+    right: 45%;
+    font-weight: bolder;
+}
+
+#foot a {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    top: 132%;
+    right: 30%;
+    color:black;
+    
     
 }
 
-button:hover {
-    background: whitesmoke;
-    text-shadow: none;
-    transition: 0.2s;
-
-}
-
-span {
-    position: absolute;
-    right: 12%;
-    top: 6%;
-
-}
-
-#nada {
-    position: absolute;
-    right: 8%;
-    top: 8%;
-    cursor: pointer; 
-    font-size: 17px;
-    text-decoration: none;
-    color: rgb(90, 46, 90);
-    font-weight: bolder;
-    text-shadow: 2px 2px 2px black;
-}
-
-#nada:visited {
-    color: rgb(134, 101, 101);
+#foot a:visited {
+    color: whitesmoke;
     transition: 0.2;
 }
