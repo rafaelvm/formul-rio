@@ -115,7 +115,7 @@ div a:visited {
     top: 4%;
     background-color: whitesmoke;
     width: 800px;
-    height: 500px;
+    height: 550px;
     padding: 100px 60px 30px;
     border-radius: 20px;
     display: flex;
@@ -171,7 +171,7 @@ fieldset{
 .conteudo1 label {
     font-size: 14px;
     position: absolute;
-    bottom: 8%;
+    bottom: 2%;
     margin: 0.2em;
 
     
@@ -180,8 +180,8 @@ fieldset{
     padding: 5px;
     display: flex;
     position: absolute;
-    left: 10%;
-    top: 95%;
+    left: 7%;
+    top: 105%;
     border: 1px solid rgb(134, 101, 101);
     border-radius: 20px;
     outline: none;
@@ -211,8 +211,8 @@ input:active, input:focus {
     border: 1px solid rgb(90, 46, 90);
     border-radius: 20px;
     position: absolute;
-    left: 21%;
-    top: 123%;
+    left: 17%;
+    top: 133%;
     background: rgb(134, 101, 101);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
@@ -230,7 +230,7 @@ input:active, input:focus {
 span {
     font-size: 15px;
     position: absolute;
-    top: 133%;
+    top: 151%;
     right: 45%;
     font-weight: bolder;
 }
@@ -239,7 +239,7 @@ span {
     text-decoration: none;
     font-size: 15px;
     position: absolute;
-    top: 132%;
+    top: 150%;
     right: 30%;
     color:black;
     
