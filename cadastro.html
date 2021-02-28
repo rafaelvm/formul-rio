@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card2">
+
+    <header>
+        <h1>Cadastramento</h1>
+        <h2>Preencha todos os campos</h2>
+    </header>
+    
+    <form action="" method="post">
+
+            <fieldset>
+            <div class="conteudo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="conteudo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+            </div>
+            </fieldset>
+
+            <fieldset>
+            <div class="conteudo">
+                <label for="nome"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="conteudo">
+                <label for="tel"><strong>Telefone</strong></label>
+                <input type="number" name="tel" id="tel" placeholder="(11) 91234-5678" required>
+            </div>
+            </fieldset>
+        
+            <fieldset>
+            <div class="conteudo">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <input type="radio" name="sex" value="Masculino" required> Masculino
+                <input type="radio" name="sex" value="Feminino" required checked> Feminino
+            </div>
+                
+            <div class="conteudo">
+                <label for="nacionalidade"><strong>Nacionalidade:</strong></label>
+                <select required>
+                    <option selected disable value="">Selecione</option>
+                    <option value="eua">Americana</option>
+                    <option value="br">Brasileira</option>
+                    <option value="esp">Espanhola</option>
+                    <option value="ing">Inglesa</option>
+                    </select>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="conteudo"><br>
+                    <label for="camp">Campo de Desenvolvimento:</label>
+                    <select required>
+                        <option selected disable value="">Selecione</option>
+                        <option value="frontend">Front-End</option>
+                        <option value="backend">Back-End</option>
+                        <option value="fullstack">Fullstack</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            
+            <div class="conteudo1">
+                <label for="obs">Discorra sobre suas tecnologias utilizadas</label>
+                <textarea name="obs" id="obs" cols="30" rows="5" placeholder="HTML, CSS, JavaScrip, Laravel, PHP, C#,..."></textarea>
+            </div>
+            
+            <div class="conteudo1">
+                <input type="submit" value="Enviar">
+            </div>
+
+            <div id="foot">
+                <span>Já tem conta?</span>
+                <a href="login.html">Login</a>
+            </div>
+            
+        </div>
+        </form>
+    </body>
+</html>
