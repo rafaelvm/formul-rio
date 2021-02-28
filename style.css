@@ -52,6 +52,7 @@ body {
     font-size: 15px;
     margin: 2px;
     background: whitesmoke;
+    outline: none;
 }
 
 .campo input[type="text"], input[type="password"] {
