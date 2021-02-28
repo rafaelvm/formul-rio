@@ -11,28 +11,28 @@
     <div id="card2">
 
     <header>
-    <h1>Cadastramento</h1>
-    <h2>Preencha todos os campos</h2>
+        <h1>Cadastramento</h1>
+        <h2>Preencha todos os campos</h2>
     </header>
     
     <form action="" method="post">
-            <div class="conteudo">
+
             <fieldset>
             <div class="conteudo">
                 <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
             </div>
 
             <div class="conteudo">
                 <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome" required>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
             </div>
             </fieldset>
 
             <fieldset>
             <div class="conteudo">
                 <label for="nome"><strong>Email</strong></label>
-                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
             </div>
 
             <div class="conteudo">
@@ -49,7 +49,7 @@
             </div>
                 
             <div class="conteudo">
-                <label for="nacionalidade"><strong>Nacionalidade</strong></label>
+                <label for="nacionalidade"><strong>Nacionalidade:</strong></label>
                 <select required>
                     <option selected disable value="">Selecione</option>
                     <option value="eua">Americana</option>
@@ -61,13 +61,17 @@
             </fieldset>
 
             <fieldset>
-                <div class="conteudo">
-                    <label for="camp">Campo de Desenvolvimento</label>
-                    <input type="radio" name="camp" value="frontend" checked> Front-End
-                    <input type="radio" name="camp" value="backend"> Back-End
-                    <input type="radio" name="camp" value="fullstack"> Fullstack
+                <div class="conteudo"><br>
+                    <label for="camp">Campo de Desenvolvimento:</label>
+                    <select required>
+                        <option selected disable value="">Selecione</option>
+                        <option value="frontend">Front-End</option>
+                        <option value="backend">Back-End</option>
+                        <option value="fullstack">Fullstack</option>
+                    </select>
                 </div>
             </fieldset>
+
             
             <div class="conteudo1">
                 <label for="obs">Discorra sobre suas tecnologias utilizadas</label>
@@ -75,7 +79,7 @@
             </div>
             
             <div class="conteudo1">
-                <input type="submit" value="Concluído">
+                <input type="submit" value="Enviar">
             </div>
 
             <div id="foot">
@@ -83,7 +87,6 @@
                 <a href="login.html">Login</a>
             </div>
             
-      
         </div>
         </form>
     </body>
