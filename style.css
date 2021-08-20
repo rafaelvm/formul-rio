@@ -187,7 +187,7 @@ fieldset {
     
 }
 
-.infoContainer input[type="submit"] {
+.submitButton {
     border: 1px solid rgb(90, 46, 90);
     border-radius: 20px;
     background: rgb(134, 101, 101);
