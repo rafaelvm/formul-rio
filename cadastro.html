@@ -13,36 +13,36 @@
         <h1>Cadastramento</h1>
         <h2>Preencha todos os campos</h2>
     </header>
-    <form class="form" method="get" action="">
+    <form action="" method="get"  class="form" >
             <fieldset>
             <div class="dataContainer">
                 <label for="nome"><strong>Nome</strong></label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <input type="text" class="nome" placeholder="Digite seu nome" required>
             </div>
             <div class="dataContainer">
                 <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text"  id="sobrenome" placeholder="Digite seu sobrenome" required>
+                <input type="text"  class="sobrenome" placeholder="Digite seu sobrenome" required>
             </div>
             </fieldset>
             <fieldset>
             <div class="dataContainer">
                 <label for="nome"><strong>Email</strong></label>
-                <input type="email"  id="email" placeholder="Digite seu email" required>
+                <input type="email" class="email" placeholder="Digite seu email"  required>
             </div>
             <div class="dataContainer">
                 <label for="tel"><strong>Telefone</strong></label>
-                <input type="number" id="tel" placeholder="(11) 91234-5678" required>
+                <input type="number" class="tel" placeholder="(11) 91234-5678" required>
             </div>
             </fieldset>
             <fieldset>
             <div class="dataContainer">
                 <label for="sexo"><strong>Sexo:</strong></label>
-                <input type="radio" name="sexo" id="sexo" value="Masculino" required> Masculino
-                <input type="radio" name="sexo" id="sexo" value="Feminino" required checked> Feminino
+                <input type="radio" name="sexo" class="sexo" value="Masculino"> Masculino
+                <input type="radio" name="sexo" class="sexo" value="Feminino"> Feminino
             </div>
             <div class="dataContainer">
-                <label for="nacionalidade" id="nacionalidade"><strong>Nacionalidade:</strong></label>
-                <select required>
+                <label for="nacionalidade" class="nacionalidade"><strong>Nacionalidade:</strong></label>
+                <select>
                     <option selected disable value="">Selecione</option>
                     <option value="eua">Americana</option>
                     <option value="br">Brasileira</option>
@@ -53,8 +53,8 @@
             </fieldset>
             <fieldset>
                 <div class="dataContainer"><br>
-                    <label for="camp" id="tecnhology">Campo de Desenvolvimento:</label>
-                    <select required>
+                    <label for="camp" class="tecnhology">Campo de Desenvolvimento:</label>
+                    <select>
                         <option selected disable value="">Selecione</option>
                         <option value="frontend">Front-End</option>
                         <option value="backend">Back-End</option>
@@ -64,10 +64,10 @@
             </fieldset>
             <div class="infoContainer">
                 <label for="obs">Discorra sobre suas tecnologias utilizadas</label>
-                <textarea id="obs" cols="30" rows="5" placeholder="HTML, CSS, JavaScrip, Laravel, PHP, C#,..."></textarea>
+                <textarea class="observacao" cols="30" rows="5" placeholder="HTML, CSS, JavaScrip, Laravel, PHP, C#,..." required></textarea>
             </div>  
             <div class="infoContainer">
-                <input type="submit" value="Enviar">
+                <button class="submitButton">Enviar</button>
             </div>
             <div id="footer">
                 <span>Já tem conta?</span>
@@ -75,5 +75,7 @@
             </div>
         </div>
         </form>
+
+        <script src="script.js"></script>
     </body>
 </html>
