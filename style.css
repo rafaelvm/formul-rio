@@ -111,7 +111,7 @@ div a:visited {
 
     /* Cadastro */
 
-#card2 {
+#container {
     background-color: whitesmoke;
     width: 650px;
     height: 750px;
@@ -134,19 +134,18 @@ h1 {
 
 }
 
-h2 {text-align: center;
+h2 {
+    text-align: center;
     margin-bottom: 1rem;
     font-size: 13px;
-    
-
 }
+
 fieldset {
     border: 0;
     display: inline-block;
 }
 
-
-.conteudo {
+.dataContainer {
     flex: 1 1 100%;
     position: relative;
     margin-bottom: 2rem;
@@ -154,14 +153,14 @@ fieldset {
 
 }
 
-.conteudo label {
+.dataContainer label {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px;
 
 }
 
-.conteudo input {
+.dataContainer input {
     border: none;
     border-bottom: 2px solid black;
     padding: 3px;
@@ -170,7 +169,7 @@ fieldset {
     outline: none;
 }
 
-.conteudo1 label {
+.infoContainer label {
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -179,18 +178,16 @@ fieldset {
     font-size: 16px;
 }
 
-.conteudo1 textarea {
+.infoContainer textarea {
     border: 1px solid rgb(90, 46, 90);
     border-radius: 20px;
-    position: relative;
     text-align: center;
-    left: 15%;
     outline: none;
-    width: 400px;
+    width: 100%;
     
 }
 
-.conteudo1 input[type="submit"] {
+.infoContainer input[type="submit"] {
     border: 1px solid rgb(90, 46, 90);
     border-radius: 20px;
     background: rgb(134, 101, 101);
@@ -204,7 +201,7 @@ fieldset {
     left: 33%;
 }
 
-.conteudo1 input[type="submit"]:hover {
+.infoContainer input[type="submit"]:hover {
     background: transparent;
     text-shadow: none;
     transition: 0.2s;
@@ -216,12 +213,12 @@ fieldset {
     font-size: 13px;
 }
 
-#foot {text-align: center;
+#footer {text-align: center;
     margin-top: 2rem;
     font-size: 16px;
     font-weight: bold;
 }
-#foot a {
+#footer a {
     text-decoration: none;
     font-size: 15px;
     position: relative;
@@ -235,31 +232,22 @@ fieldset {
     
 }
 
-#foot a:visited {
+#footer a:visited {
     color: black;
     transition: 0.2;
 }
-
     /* Responsividade */
-
-@media screen and (max-width: 390px) {
-    p {
-        right: 45%;
-    }
-  }
-
   @media screen and (max-width: 670px) and (min-width: 400px) {
-    #card2 {
-        height: 950px;
+    #container {
+        height: 100%;
         padding: 1px;
     }
-    conteudo1 {
+    infoContainer {
         margin-top: 1rem;
     }
 
-    .conteudo1 textarea {
+    .infoContainer textarea {
         margin-top: 2rem;
-        left: 10%;
     }
 
   }
